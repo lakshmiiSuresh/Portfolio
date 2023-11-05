@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+     body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(191, 191, 235);
+}
+
+        nav {
+            background-color: rgb(17, 8, 59);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: flex-end;
+            padding: 0;
+            margin-right: 10%;
+        }
+
+        nav li {
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav .name {
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(223, 232, 233);
+            margin-left: 200px;
+        }
+
+        a {
+            color: rgb(200, 236, 240);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+  
+  <nav>
+    <span class="name">PORTFOLIO</span>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
+        <li><a href="#SignUp">SIGN UP</a></li>
+    </ul>
+</nav>
+
+    <h1 align="center">Sign Up</h1>
+
+    <form method="post" autocomplete="on">
+      <table align="center" cellspaning="20"  cellpadding="20">
+          <tr><td>First Name</td>
+              <td><input type="text" name="fname" placeholder="First name"  required ></td>
+          </tr>
+
+          <tr><td>Last Name</td>
+              <td><input type="text" name="lname" placeholder="Last name"></td>
+          </tr>
+
+          <tr><td>DOB</td>
+              <td><input type="date" name="date"></td>
+          </tr>
+
+          <tr><td>Photo </td>
+            <td><input type="file" name="file"></td>
+          </tr>
+
+          <tr><td>Email</td>
+              <td><input type="email" name="email" placeholder="abc@gmail.com"></td>
+          </tr>
+
+          <tr><td>Gender</td>
+            <td><input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+                <input type="radio" name="Gender">Others
+            </td>
+        </tr>
+
+        <tr><td>Address</td>
+          <th><textarea name="address" id="" cols="50" rows="6"></textarea>
+          </th></tr>
+
+          <tr><td>City</td>
+              <td><input type="text" name="city" ></td>
+          </tr>
+
+          <tr><td>Pincode</td>
+          <td><input type="number" name="pincode" maxlength="6" placeholder="685606"></td>
+        </tr>
+
+          <tr>
+            <td>Qualification</td>
+            <td><select id="inputState">
+                <option selected>M.TECH</option>
+                <option>B.TECH</option>
+                <option>MCA</option>
+              </select></td>
+          </tr>
+
+          <tr>
+            <td>Technical Skills</td>
+            <td><select id="input">
+                <option value="C">C</option>
+                <option value="JAVA" selected>JAVA</option>
+                <option value="PYTHON">PYTHON</option>
+            </select></td>
+        </tr>
+
+        <tr><td>Ambition</td>
+          <td><select name="ambition" id=""  >
+              <option value=""> Select Ambition</option>
+              <option value="1">Teacher</option>
+              <option value="2">Doctor</option>
+              <option value="3">Engineer</option>
+          </select></td>
+      </tr>
+
+        <tr><td>Hobbies</td>
+          <td><input type="checkbox" value="Singing" checked="checked">Singing 
+              <input type="checkbox" value="Dancing">Dancing
+              <input type="checkbox" value="Other">Other
+          </td></tr>
+
+          
+          <tr>
+            <td>About Me</td>
+            <td><textarea  rows="4" cols="50" placeholder="About Me"></textarea></td>
+        </tr>
+
+        <tr><td><button>Submitt</button></td>
+
+        <td><input type="reset" value="Reset"></td></tr>
+      </table>
+  </form>
+</body>
+</html>
